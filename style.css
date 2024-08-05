@@ -1,0 +1,181 @@
+/* Comentario en CSS */
+/* Esto es un comentario */
+
+/* Selector */
+/* 
+
+selector {
+    property: value;
+}
+
+selector, selector, ... {
+    property: value;
+}
+
+Especificidad (id, class, element)
+
+Color Hexadecimal: 
+0-9A-F
+#000000 = Negro
+#FFFFFF = Blanco
+#FFFFFFFF = Blanco
+
+#RRGGBBAA
+
+RGB = RED, GREEN, BLUE
+rgb(0-255, 0-255, 0-255)
+rgba(0-255, 0-255, 0-255, 0-1)
+*/
+
+/* Selector de ID */
+#home {
+    color: blue;
+}
+
+#about {
+    color: red;
+}
+
+/* Selector de Clase */
+.titulo {
+    border-bottom: 1px solid rgb(234, 123, 34);
+}
+
+.list {
+    color: gray
+}
+
+/* Selector de Elemento */
+p {}
+
+h1 {}
+
+div {}
+
+section {}
+
+/* conjuntos */
+h1,
+h2,
+h3 {}
+
+h4,
+h5,
+h6 {}
+
+/* Selector Descendiente */
+section h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Selector Hijo */
+section>p {
+    text-align: center;
+}
+
+ul>li {
+    color: blueviolet;
+}
+
+/* Selector Adyacente */
+
+h3+p {
+    text-align: justify;
+    font-size: 10px;
+    color: gray;
+}
+
+/* Selector Hermano */
+h3~p {
+    text-align: justify;
+    font-size: 14px;
+    color: goldenrod;
+}
+
+input[type] {
+    color: red;
+}
+
+input[type=text] {
+    color: green;
+}
+
+input[class=class1] {
+    border: 0;
+    border-bottom: 1px solid red;
+}
+
+input[class*=class1] {
+    border: 0;
+    border-bottom: 1px solid red;
+}
+
+a[href^=https] {
+    color: green;
+}
+
+a[href$=".html"] {
+    color: red;
+}
+
+a[href$=".jpg"],
+a[href$=".pdf"] {
+    color: chocolate;
+    background-color: #ccc;
+}
+
+.fondo-semi {
+    background-color: #24b0c93c;
+}
+
+/* Pseudoclases o Pseudoelemento  */
+
+a:hover {
+    color: black;
+}
+
+
+input::placeholder {
+    color: green;
+    font-style: italic;
+}
+
+p::first-letter {
+    font-size: 25px;
+}
+
+ul :first-child {
+    color: red;
+}
+
+ul :nth-child(2) {
+    color: brown;
+}
+
+
+.bienvenida {
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 2px dashed #3535AA;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px #999999;
+}
+
+.bienvenida::before {
+    content: '4G';
+    font-size: 12px;
+    display: block;
+    width: 100%;
+    text-align: left;
+    color: red;
+}
+
+.bienvenida::after {
+    content: '4G';
+    font-size: 12px;
+    display: block;
+    width: 100%;
+    text-align: right;
+    color: blue;
+}
